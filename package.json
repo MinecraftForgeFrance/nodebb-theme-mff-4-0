@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-persona",
-  "version": "7.2.18",
+  "name": "nodebb-theme-mff-4-0",
+  "version": "4.0.0",
   "nbbpm": {
     "compatibility": "^1.7.0"
   },
-  "description": "Persona theme for NodeBB",
+  "description": "Minecraft Forge France V4.0 theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+    "url": "https://github.com/Woryk/nodebb-theme-mff-4-0"
   },
   "keywords": [
     "nodebb",
@@ -32,11 +32,16 @@
       "name": "Barış Soner Uşaklı",
       "email": "baris@designcreateplay.com",
       "url": "https://github.com/barisusakli"
+    },
+    {
+      "name": "Woryk",
+      "email": "",
+      "url": ""
     }
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
+    "url": "https://github.com/Woryk/nodebb-theme-mff-4-0/pulls"
   },
   "dependencies": {
     "striptags": "^3.1.1",
