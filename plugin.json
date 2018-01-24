@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-persona",
+	"id": "nodebb-theme-mff-4-0",
 	"library": "library.js",
 	"hooks": [
 		{ "hook": "filter:teasers.get", "method": "getTeasers" },

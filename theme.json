@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-theme-persona",
-    "name": "Persona",
-    "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona",
+    "id": "nodebb-theme-mff-4-0",
+    "name": "nodebb-theme-mff-4-0",
+    "description": "Minecraft Forge France V4 theme.",
+    "url": "https://github.com/Woryk/nodebb-theme-mff-4-0",
     "screenshot": "screenshot.png"
 }
