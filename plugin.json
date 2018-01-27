@@ -19,6 +19,9 @@
 	"modules": {
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
 	},
+	"staticDirs": {
+		"images": "static/images"
+	},
 	"acpScripts": [
 		"lib/admin.js"
 	]

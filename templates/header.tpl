@@ -24,6 +24,7 @@
 	<!-- END -->
 </head>
 
+<div id="banner"></div>
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
 	<nav id="menu" class="slideout-menu hidden">
 		<div class="menu-profile">
@@ -72,7 +73,10 @@
 
 	<main id="panel" class="slideout-panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-			<div class="container">
+			<div class="container-fluid">
+				<div id="shard">
+					<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->"><img src="/plugins/nodebb-theme-mff-4-0/images/logo.png"></a>
+				</div>
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
