@@ -23,8 +23,6 @@
 	<style>{{customCSS}}</style>
 	<!-- END -->
 </head>
-
-<div id="banner"></div>
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
 	<nav id="menu" class="slideout-menu hidden">
 		<div class="menu-profile">
@@ -80,5 +78,8 @@
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div class="container" id="content">
-		<!-- IMPORT partials/noscript/warning.tpl -->
+		<div class="container-fluid">
+            <div class="row">
+                <div id="banner"></div>
+                <div class="col-lg-offset-1 col-lg-10 col-md-12 col-xs-12" id="content">
+                    <!-- IMPORT partials/noscript/warning.tpl -->

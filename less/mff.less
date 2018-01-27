@@ -5,7 +5,7 @@ Node BB Theme CSS
 
 
 /* ===========================
-	Header 
+	Header
 =========================== */
 
 /* Banner */
@@ -15,12 +15,12 @@ Node BB Theme CSS
 	background: url(/plugins/nodebb-theme-mff-4-0/images/background.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 300px;
+	height: 200px;
 	margin-bottom: 1em;
 	background-origin: content-box;
 	width: 100%;
-	top: 50px;
-	position: absolute;
+	top: -15px;
+	position: relative;
 	left: auto;
 	right: 0;
 }
@@ -38,20 +38,29 @@ Node BB Theme CSS
 }
 
 @media (max-width: 767px) {
+    // horizontal smartphone / tablet
 	#shard img  {
-		max-width: 325px;
+		max-width: 50%;
+	}
+
+    #banner {
+        height: 100px;
+        top: -25px;
+    }
+}
+
+@media (max-width: 577px) {
+    // smartphone
+	#shard img  {
+		max-width: 85%;
 	}
 }
 
-#content {
-    margin-top: 300px;
- }
+#main-nav {
+    margin-left: 370px;
+}
 
- #main-nav {
- 	margin-left: 370px;
- }
-
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
 	#main-nav {
 		margin-left: 320px;
 	}
@@ -97,6 +106,10 @@ Node BB Theme CSS
     color: #fff;
 }
 
+#logged-in-menu {
+    margin-right: 45px;
+}
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #00000036;
 }
@@ -104,4 +117,3 @@ Node BB Theme CSS
 .navbar-default .btn-link {
     color: #fff;
 }
-

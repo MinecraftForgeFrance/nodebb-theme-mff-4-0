@@ -1,4 +1,8 @@
-		</div><!-- END container -->
+                </div><!-- END col-lg-offset-1 col-lg-10 col-md-12 col-xs-12 -->
+                <div class="col-lg-1 col-md-0 col-xs-0">
+                </div>
+            </div><!-- END row -->
+        </div><!-- END container -->
 	</main>
 
 	<div class="topic-search hidden">
