@@ -19,8 +19,8 @@ Node BB Theme CSS
 	margin-bottom: 1em;
 	background-origin: content-box;
 	width: 100%;
-	top: 50px;
-	position: absolute;
+	top: -15px;
+	position: relative;
 	left: auto;
 	right: 0;
 }
@@ -83,9 +83,11 @@ Node BB Theme CSS
     color: #ccc;
     background-color: #2f5066;
 }
+
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: #ccc;
 }
+
 .fa-facebook-square {
     color: #8fb3ff;
 }
@@ -118,17 +120,9 @@ Node BB Theme CSS
     color: #fff;
 }
 
-.account .cover {
-
-}
-
 @media (min-width: 992px) {
-    .account .cover {
-        width: 120%;
-        left: -10%;
+    .container {
+        width: 83.33%;
+        width: calc(100% / 1.2);
     }
-}
-
-#content {
-    margin-top: 200px;
 }

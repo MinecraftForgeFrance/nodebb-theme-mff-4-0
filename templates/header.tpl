@@ -78,8 +78,6 @@
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div class="container-fluid">
-            <div class="row">
-                <div id="banner"></div>
-                <div class="col-lg-offset-1 col-lg-10 col-md-12 col-xs-12" id="content">
-                    <!-- IMPORT partials/noscript/warning.tpl -->
+        <div id="banner"></div>
+		<div class="container" id="content">
+            <!-- IMPORT partials/noscript/warning.tpl -->
