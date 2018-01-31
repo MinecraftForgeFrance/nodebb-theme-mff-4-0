@@ -27,19 +27,19 @@ Node BB Theme CSS
 
 /* Navbar */
 
-#shard {
+.shard {
 	position: absolute;
 	left: 0;
 	z-index: 1;
 }
 
-#shard img  {
+.shard img  {
 	max-width: 385px;
 }
 
 @media (max-width: 767px) {
     // horizontal smartphone / tablet
-	#shard img  {
+	.shard img  {
 		max-width: 50%;
 	}
 
@@ -51,7 +51,7 @@ Node BB Theme CSS
 
 @media (max-width: 577px) {
     // smartphone
-	#shard img  {
+	.shard img  {
 		max-width: 85%;
 	}
 }
@@ -127,50 +127,85 @@ Node BB Theme CSS
     }
 }
 
+
 /* Footer */
-
 footer {
-	position: absolute;
-    width: 100%;
-    margin-top: 2%;
+	margin-top: 15px;
 }
 
-footer #shard {
-	bottom: 0;
+.footer-shard {
+	top: -55px;
 }
 
-footer .footer-copyright {
-	overflow: hidden;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: #fff;
-    background-color: #03263e;
-    font-size: 1.1rem;
-}
-
-footer .social-networks {
-	color: #c2c2c2;
-    font-size: 1.1rem;
+.footer-row {
 	background-color: #03263e;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+	font-size: 1.1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
-footer .social-networks a {
+.footer-copyright {
+	overflow: hidden;
+	color: #fff;
+}
+
+.footer-social-networks {
 	color: #c2c2c2;
 }
 
-footer .social-networks a:hover {
-	color: #f4f4f4;
-}
-
-footer .social-networks .icons-sm {
+.footer-social-networks a {
 	color: #c2c2c2;
-    padding: .5rem;
-    margin: .5rem;
-    font-size: 1.1rem;
 }
 
-footer .social-networks .icons-sm:hover{
+.footer-social-networks a:hover {
 	color: #f4f4f4;
+}
+
+.footer-social-networks .icons-sm {
+	color: #c2c2c2;
+	padding: .5rem;
+	margin: .5rem;
+	font-size: 1.1rem;
+}
+
+.footer-social-networks .icons-sm:hover {
+	color: #f4f4f4;
+}
+
+.footer-link {
+	margin-left: 270px;
+}
+
+// force the footer to be away at the end
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+@media (max-width: 767px) {
+    // horizontal smartphone / tablet
+		.footer-row {
+			font-size: 1.1em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			text-align: center;
+		}
+
+		.footer-social-networks {
+			margin-top: 0.5em;
+			float: none !important; // we want icon centered on mobile
+		}
+
+		.footer-shard {
+			display: none;
+		}
+
+		.footer-link {
+			margin-left: 0px;
+		}
 }

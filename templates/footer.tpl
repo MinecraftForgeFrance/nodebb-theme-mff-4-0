@@ -1,48 +1,38 @@
         </div><!-- END container -->
 	</main>
 
-<!--Footer-->
-<footer>
-
-    <div id="shard">
-		<a href="http://node.minecraftforgefrance.fr/"><img src="/plugins/nodebb-theme-mff-4-0/images/credits.png"></a>
-	</div>
-
-    <div class="social-networks">
-        <div class="container-fluid">
-            <div class="row">
-            	<div style="width: 15%; float: left;">&nbsp;</div>
-                <div style="width: 35%; float: left;" >
-                	<a href="#">Contact</a> / <a href="#">Mentions Légales</a> / <a href="#">Faire un don</a>
-                </div>
-
-                <div style="width: 50%; float: left; text-align: right;">
-                    <!--Facebook-->
-                    <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook"> </i></a>
-                    <!--Twitter-->
-                    <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
-                    <!--Google +-->
-                    <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
-                    <!--Linkedin-->
-                    <a class="icons-sm discord-ic"><i class="fa fa-discord"> </i></a>
-                </div>
-            </div>
+  <!--Footer-->
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer-row">
+        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+          <div class="shard footer-shard">
+            <a href="http://node.minecraftforgefrance.fr/"><img src="/plugins/nodebb-theme-mff-4-0/images/credits.png" alt="Design by Woryk"></a>
+          </div>
+          <div class="footer-link">
+            <a href="#">Contact</a> / <a href="#">Mentions Légales</a> / <a href="#">Faire un don</a>
+          </div>
         </div>
-    </div>
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            <div class="row">
-            	<div style="width: 15%; float: left;">&nbsp;</div>
-                <div style="width: 35%; float: left;">        	
-            		MINECRAFT FORGE FRANCE © 2018
-            	</div>
-            	<div style="width: 50%; float: left;"></div>
-            </div>
+        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
+          <div class="pull-right footer-social-networks">
+              <!--Facebook-->
+              <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook"> </i></a>
+              <!--Twitter-->
+              <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+              <!--Google +-->
+              <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+              <!--Linkedin-->
+              <a class="icons-sm discord-ic"><i class="fa fa-discord"> </i></a>
+          </div>
         </div>
+      </div>
+      <div class="row footer-copyright footer-row">
+        <div class="col-xs-12">
+          <p class="footer-link">MINECRAFT FORGE FRANCE © 2018</p>
+        </div>
+      </div>
     </div>
-
-</footer>
+  </footer>
 
 	<div class="topic-search hidden">
 		<div class="btn-group">

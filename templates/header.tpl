@@ -72,12 +72,12 @@
 	<main id="panel" class="slideout-panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 			<div class="container-fluid">
-				<div id="shard">
+				<div class="shard">
 					<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->"><img src="/plugins/nodebb-theme-mff-4-0/images/logo.png"></a>
 				</div>
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-        <div id="banner"></div>
+		<div id="banner"></div>
 		<div class="container" id="content">
             <!-- IMPORT partials/noscript/warning.tpl -->
