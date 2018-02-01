@@ -1,26 +1,6 @@
 {
-  "_from": "github:MinecraftForgeFrance/nodebb-theme-mff-4-0",
-  "_id": "nodebb-theme-mff-4-0@4.0.0",
-  "_inBundle": false,
-  "_location": "/nodebb-theme-mff-4-0",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "MinecraftForgeFrance/nodebb-theme-mff-4-0",
-    "rawSpec": "MinecraftForgeFrance/nodebb-theme-mff-4-0",
-    "saveSpec": "github:MinecraftForgeFrance/nodebb-theme-mff-4-0",
-    "fetchSpec": null,
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "github:MinecraftForgeFrance/nodebb-theme-mff-4-0#cd20e4e5d739a720fffd7021c2aff833febab078",
-  "_spec": "MinecraftForgeFrance/nodebb-theme-mff-4-0",
-  "_where": "/home/nodeapp/nodebb-mff",
   "bugs": {
-    "url": "https://github.com/Woryk/nodebb-theme-mff-4-0/pulls"
+    "url": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0/pulls"
   },
   "bundleDependencies": false,
   "contributors": [
@@ -41,6 +21,11 @@
     },
     {
       "name": "Woryk"
+    },
+    {
+      "name": "Robin Biechy",
+      "email": "robinbiechy@protonmail.com",
+      "url": "https://github.com/robin4002"
     }
   ],
   "dependencies": {
@@ -49,7 +34,7 @@
   },
   "deprecated": false,
   "description": "Minecraft Forge France V4.0 theme for NodeBB",
-  "homepage": "https://github.com/Woryk/nodebb-theme-mff-4-0#readme",
+  "homepage": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0#readme",
   "keywords": [
     "nodebb",
     "theme",
@@ -65,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Woryk/nodebb-theme-mff-4-0.git"
+    "url": "git+https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0.git"
   },
   "version": "4.0.0"
 }

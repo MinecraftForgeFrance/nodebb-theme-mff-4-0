@@ -19,8 +19,6 @@
               <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook"> </i></a>
               <!--Twitter-->
               <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
-              <!--Google +-->
-              <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
               <!--Linkedin-->
               <a class="icons-sm discord-ic"><i class="fa fa-discord"> </i></a>
           </div>
