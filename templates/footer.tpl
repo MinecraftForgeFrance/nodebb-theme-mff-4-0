@@ -1,5 +1,7 @@
-        </div><!-- END container -->
+{isSpider}
+		</div><!-- END container -->
 	</main>
+	<!-- IF !isSpider -->
 
   <!--Footer-->
   <footer>
@@ -51,6 +53,8 @@
 			<p>[[global:reconnecting-message, {config.siteTitle}]]</p>
 		</div>
 	</div>
+	<!-- ENDIF !isSpider -->
+
 
 	<script defer src="{relative_path}/assets/nodebb.min.js?{config.cache-buster}"></script>
 

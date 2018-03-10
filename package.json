@@ -1,8 +1,23 @@
 {
-  "bugs": {
-    "url": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0/pulls"
+  "name": "nodebb-theme-mff-4-0",
+  "version": "4.0.0",
+  "nbbpm": {
+    "compatibility": "^1.8.0"
   },
-  "bundleDependencies": false,
+  "description": "Minecraft Forge France V4.0 theme for NodeBB",
+  "homepage": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0#readme",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0.git"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "forum",
+    "bootstrap",
+    "responsive"
+  ],
   "contributors": [
     {
       "name": "Andrew Rodrigues",
@@ -28,29 +43,12 @@
       "url": "https://github.com/robin4002"
     }
   ],
-  "dependencies": {
-    "pulling": "^1.1.1",
-    "striptags": "^3.1.1"
-  },
-  "deprecated": false,
-  "description": "Minecraft Forge France V4.0 theme for NodeBB",
-  "homepage": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0#readme",
-  "keywords": [
-    "nodebb",
-    "theme",
-    "forum",
-    "bootstrap",
-    "responsive"
-  ],
   "license": "BSD-2-Clause",
-  "main": "theme.less",
-  "name": "nodebb-theme-mff-4-0",
-  "nbbpm": {
-    "compatibility": "^1.7.0"
+  "bugs": {
+    "url": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0.git"
-  },
-  "version": "4.0.0"
+  "dependencies": {
+    "striptags": "^3.1.1",
+    "pulling": "^1.1.2"
+  }
 }
