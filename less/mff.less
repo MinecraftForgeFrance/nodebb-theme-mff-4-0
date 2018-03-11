@@ -9,8 +9,6 @@ Node BB Theme CSS
 =========================== */
 
 /* Banner */
-
-
 #banner {
 	background: url(/plugins/nodebb-theme-mff-4-0/images/background.jpg);
 	background-size: cover;
@@ -134,7 +132,7 @@ footer {
 }
 
 .footer-shard {
-	top: -50px;
+	top: -52px;
 }
 
 .footer-row {
@@ -193,7 +191,6 @@ footer {
 	margin-left: 270px;
 }
 
-
 // force the footer to be away at the end
 body {
 	display: flex;
@@ -207,23 +204,40 @@ main {
 
 @media (max-width: 767px) {
     // horizontal smartphone / tablet
-		.footer-row {
-			font-size: 1.1em;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-			text-align: center;
-		}
+	.footer-row {
+		font-size: 1.1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		text-align: center;
+	}
 
-		.footer-social-networks {
-			margin-top: 0.5em;
-			float: none !important; // we want icon centered on mobile
-		}
+	.footer-social-networks {
+		margin-top: 0.5em;
+		float: none !important; // we want icon centered on mobile
+	}
 
-		.footer-shard {
-			display: none;
-		}
+	.footer-shard {
+		display: none;
+	}
 
-		.footer-link {
-			margin-left: 0px;
-		}
+	.footer-link {
+		margin-left: 0px;
+	}
+}
+
+// display cookie message above footer
+.cookie-consent {
+	z-index: 100;
+}
+
+// section
+.section-header {
+	background-color: #01243C;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2) inset;
+	color: #FFFFFF;
+	padding: 7px 4px 1px 16px;
+}
+
+.section-header h2 {
+	margin-left: 0 !important;
 }
