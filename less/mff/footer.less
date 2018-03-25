@@ -1,0 +1,102 @@
+footer {
+	margin-top: 15px;
+}
+
+.footer-shard {
+	top: -52px;
+}
+
+.footer-row {
+	background-color: #03263e;
+	font-size: 1.1rem;
+}
+
+.first-footer-row {
+	padding-top: 0.5rem;
+}
+
+.footer-copyright {
+	overflow: hidden;
+	color: #fff;
+}
+
+.footer-social-networks {
+	color: #c2c2c2;
+}
+
+.footer-social-networks a {
+	color: #c2c2c2;
+}
+
+.footer-social-networks a:hover {
+	color: #f4f4f4;
+}
+
+.footer-social-networks .icons-sm {
+	color: #c2c2c2;
+	padding: .5rem;
+	margin: .5rem;
+	font-size: 16px;
+}
+
+.footer-social-networks .icons-sm:hover {
+	color: #f4f4f4;
+}
+
+.discord-icon-svg {
+	height: 16px;
+	top: 3px;
+	position: relative;
+}
+
+.discord-icon {
+	fill: #c2c2c2;
+}
+
+.discord-icon:hover {
+	fill: #f4f4f4;
+}
+
+
+.footer-link {
+	margin-left: 270px;
+}
+
+// force the footer to be away at the end
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+@media (max-width: 767px) {
+    // horizontal smartphone / tablet
+	.footer-row {
+		font-size: 1.1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		text-align: center;
+	}
+
+	.footer-social-networks {
+		margin-top: 0.5em;
+		float: none !important; // we want icon centered on mobile
+	}
+
+	.footer-shard {
+		display: none;
+	}
+
+	.footer-link {
+		margin-left: 0px;
+	}
+}
+
+// display cookie message above footer
+.cookie-consent {
+	z-index: 100;
+}

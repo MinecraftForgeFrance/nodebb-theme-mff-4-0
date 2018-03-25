@@ -1,14 +1,11 @@
-/*
-Minecraft Forge France V4.0
-Node BB Theme CSS
-*/
+/*****************************\
+  Minecraft Forge France V4.0
+		Node BB Theme CSS       
+\*****************************/
 
+@import 'mff/ubuntu_font';
 
-/* ===========================
-	Header
-=========================== */
-
-/* Banner */
+// Banner
 #banner {
 	background: url(/plugins/nodebb-theme-mff-4-0/images/background.jpg);
 	background-size: cover;
@@ -23,101 +20,7 @@ Node BB Theme CSS
 	right: 0;
 }
 
-/* Navbar */
-
-.shard {
-	position: absolute;
-	left: 0;
-	z-index: 1;
-}
-
-.shard img  {
-	max-width: 385px;
-}
-
-@media (max-width: 767px) {
-    // horizontal smartphone / tablet
-	.shard img  {
-		max-width: 50%;
-	}
-
-    #banner {
-        height: 100px;
-        top: -25px;
-    }
-}
-
-@media (max-width: 577px) {
-    // smartphone
-	.shard img  {
-		max-width: 85%;
-	}
-}
-
-#main-nav {
-    margin-left: 370px;
-}
-
-@media (max-width: 1080px) {
-	#main-nav {
-		margin-left: 320px;
-	}
-}
-
-.navbar-default {
-    background-color: #01243c;
-    border-color: #2f5066;
-}
-
-.navbar-fixed-top {
-    border-width: 0 0 5px;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #ccc;
-    background-color: #2f5066;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #ccc;
-}
-
-.fa-facebook-square {
-    color: #8fb3ff;
-}
-
-.navbar-toggle {
-    z-index: 2;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #fff;
-}
-
-#mobile-menu .fa-lg {
-    color: #fff;
-}
-
-#mobile-chats .fa-lg {
-    color: #fff;
-}
-
-#logged-in-menu {
-    margin-right: 45px;
-}
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #00000036;
-}
-
-.navbar-default .btn-link {
-    color: #fff;
-}
-
+// make the forum larger on desktop
 @media (min-width: 992px) {
     .container {
         width: 83.33%;
@@ -125,129 +28,6 @@ Node BB Theme CSS
     }
 }
 
-
-/* Footer */
-footer {
-	margin-top: 15px;
-}
-
-.footer-shard {
-	top: -52px;
-}
-
-.footer-row {
-	background-color: #03263e;
-	font-size: 1.1rem;
-}
-
-.first-footer-row {
-	padding-top: 0.5rem;
-}
-
-.footer-copyright {
-	overflow: hidden;
-	color: #fff;
-}
-
-.footer-social-networks {
-	color: #c2c2c2;
-}
-
-.footer-social-networks a {
-	color: #c2c2c2;
-}
-
-.footer-social-networks a:hover {
-	color: #f4f4f4;
-}
-
-.footer-social-networks .icons-sm {
-	color: #c2c2c2;
-	padding: .5rem;
-	margin: .5rem;
-	font-size: 16px;
-}
-
-.footer-social-networks .icons-sm:hover {
-	color: #f4f4f4;
-}
-
-.discord-icon-svg {
-	height: 16px;
-	top: 3px;
-	position: relative;
-}
-
-.discord-icon {
-	fill: #c2c2c2;
-}
-
-.discord-icon:hover {
-	fill: #f4f4f4;
-}
-
-
-.footer-link {
-	margin-left: 270px;
-}
-
-// force the footer to be away at the end
-body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-}
-
-main {
-	flex: 1 0 auto;
-}
-
-@media (max-width: 767px) {
-    // horizontal smartphone / tablet
-	.footer-row {
-		font-size: 1.1em;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-		text-align: center;
-	}
-
-	.footer-social-networks {
-		margin-top: 0.5em;
-		float: none !important; // we want icon centered on mobile
-	}
-
-	.footer-shard {
-		display: none;
-	}
-
-	.footer-link {
-		margin-left: 0px;
-	}
-}
-
-// display cookie message above footer
-.cookie-consent {
-	z-index: 100;
-}
-
-// section
-.section-header {
-	background-color: #01243C;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2) inset;
-	color: #FFFFFF;
-	padding: 7px 4px 7px 16px;
-}
-
-.section-desc p {
-	margin: 0;
-}
-
-.section-header h2 {
-	margin-left: 0 !important;
-}
-
-.section-toggle {
-	color: white;
-	margin-right: 10px;
-	cursor: pointer;
-}
+@import 'mff/navbar';
+@import 'mff/footer';
+@import 'mff/section';

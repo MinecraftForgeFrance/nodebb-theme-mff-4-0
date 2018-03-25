@@ -1,0 +1,92 @@
+.shard {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.shard img  {
+	max-width: 385px;
+}
+
+@media (max-width: 767px) {
+    // horizontal smartphone / tablet
+	.shard img  {
+		max-width: 50%;
+	}
+
+    #banner {
+        height: 100px;
+        top: -25px;
+    }
+}
+
+@media (max-width: 577px) {
+    // smartphone
+	.shard img  {
+		max-width: 85%;
+	}
+}
+
+#main-nav {
+    margin-left: 370px;
+}
+
+@media (max-width: 1080px) {
+	#main-nav {
+		margin-left: 320px;
+	}
+}
+
+.navbar-default {
+    background-color: #01243c;
+    border-color: #2f5066;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ccc;
+    background-color: #2f5066;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ccc;
+}
+
+.fa-facebook-square {
+    color: #8fb3ff;
+}
+
+.navbar-toggle {
+    z-index: 2;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+#mobile-menu .fa-lg {
+    color: #fff;
+}
+
+#mobile-chats .fa-lg {
+    color: #fff;
+}
+
+#logged-in-menu {
+    margin-right: 45px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #00000036;
+}
+
+.navbar-default .btn-link {
+    color: #fff;
+}
