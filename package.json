@@ -9,7 +9,7 @@
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0.git"
+    "url": "github:MinecraftForgeFrance/nodebb-theme-mff-4-0"
   },
   "keywords": [
     "nodebb",
