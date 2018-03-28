@@ -11,21 +11,24 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 200px;
-	margin-bottom: 1em;
 	background-origin: content-box;
 	width: 100%;
-	top: -15px;
+	top: -25px;
 	position: relative;
 	left: auto;
 	right: 0;
 }
 
 // make the forum larger on desktop
-@media (min-width: 992px) {
+@media (min-width: @screen-lg-min) {
     .container {
         width: 83.33%;
         width: calc(100% / 1.2);
-    }
+	}
+
+	#banner {
+		top: -15px;
+	}
 }
 
 @import 'mff/navbar';
