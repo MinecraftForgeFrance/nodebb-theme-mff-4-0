@@ -9,7 +9,7 @@
       <div class="row footer-row first-footer-row">
         <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
           <div class="shard footer-shard">
-            <a href="http://node.minecraftforgefrance.fr/"><img src="/plugins/nodebb-theme-mff-4-0/images/credits.png" alt="Design by Woryk"></a>
+            <a href="/"><img src="/plugins/nodebb-theme-mff-4-0/images/credits.png" alt="Design by Woryk"></a>
           </div>
           <div class="footer-link">
             <a href="#">Contact</a> / <a href="#">Mentions Légales</a> / <a href="#">Faire un don</a>
