@@ -11,14 +11,14 @@
 		<!-- BEGIN diffs -->
 		<option value="{../timestamp}">
 			{../pretty}
-			<!-- IF @first -->(last revision)<!-- END -->
-			<!-- IF @last -->(original revision)<!-- END -->
+			<!-- IF @first -->([[topic:diffs.current-revision]])<!-- END -->
+			<!-- IF @last -->([[topic:diffs.original-revision]])<!-- END -->
 		</option>
 		<!-- END -->
 	</select>
 
 	<hr />
 
-	<ul class="posts-list"></ul>
+	<ul class="posts-list diffs"></ul>
 </div>
 <!-- END -->

@@ -25,7 +25,7 @@
 						<!-- END -->
 						<li class="dropdown-header">[[modules:chat.options]]</li>
 						<li>
-							<a href="#" data-action="members"><i class="fa fa-fw fa-plus"></i> [[modules:chat.add-users-to-room]]</a>
+							<a href="#" data-action="members"><i class="fa fa-fw fa-cog"></i> [[modules:chat.manage-room]]</a>
 						</li>
 						<li>
 							<a href="#" data-action="rename"><i class="fa fa-fw fa-edit"></i> [[modules:chat.rename-room]]</a>
@@ -46,7 +46,7 @@
 
 				<div component="chat/composer">
 					<textarea component="chat/input" placeholder="[[modules:chat.placeholder]]" class="form-control chat-input mousetrap" rows="1"></textarea>
-					<button class="btn btn-primary" type="button" data-action="send">[[modules:chat.send]]</button>
+					<button class="btn btn-primary" type="button" data-action="send"><i class="fa fa-fw fa-2x fa-paper-plane"></i></button>
 					<span component="chat/message/remaining">{maximumChatMessageLength}</span>
 				</div>
 			</div>
