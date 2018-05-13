@@ -117,4 +117,61 @@ library.addUserToTopic = function(data, callback) {
 	}
 };
 
+library.addUserSettings = function(data, callback) {
+	let availableSkins = [{
+		name: 'Light',
+		value: 'light'
+	}, {
+		name: 'Dark',
+		value: 'dark'
+	}];
+
+	let options = '';
+	availableSkins.forEach(function(skin) {
+		options += `<option value="${skin.value}" ${(data.settings.mffThemeSkin === skin.value) ? 'selected' : ''}>${skin.name}</option>`;
+	});
+
+	data.customSettings.push({
+		title: 'Paramètre du thème',
+		content: '<div class="form-group"><label for="mffThemeSkin">Style de MFFv4</label><select class="form-control" id="mffThemeSkin" data-property="mffThemeSkin" autocomplete="off">' + options + '</select><input type="hidden" id="bootswatchSkin" value="noskin"></div>'
+		// hidden input is a hack to avoid nodebb to clear the skin
+	});
+
+	callback(null, data);
+};
+
+library.saveUserSettings = function(data, callback) {
+	user.setUserField(data.uid, "mffthemeskin", data.settings.mffThemeSkin);
+};
+
+library.getUserSettings = function(data, callback) {
+	user.getUserField(data.uid, "mffthemeskin", (err, mffSkin) => {
+		if(!err && mffSkin) {
+			data.settings.mffThemeSkin = mffSkin;
+		} else {
+			data.settings.mffThemeSkin = "light";
+		}
+		callback(null, data);
+	});
+};
+
+library.appendUserFields = function(data, callback) {
+	data.whitelist.push("mffthemeskin");
+	callback(null, data);
+};
+
+library.renderHeader = function(data, callback) {
+	if(data.res.locals.config.uid) {
+		user.getUserField(data.res.locals.config.uid, "mffthemeskin", (err, mffSkin) => {
+			if(!err && mffSkin && mffSkin === "dark") {
+				data.templateValues.bootswatchCSS = '/plugins/nodebb-theme-mff-4-0/styles/dark-skin.css';
+			}
+			callback(null, data);
+		});
+	}
+	else {
+		callback(null, data);
+	}
+};
+
 module.exports = library;

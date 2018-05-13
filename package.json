@@ -47,6 +47,9 @@
   "bugs": {
     "url": "https://github.com/MinecraftForgeFrance/nodebb-theme-mff-4-0/issues"
   },
+  "scripts": {
+    "compiledark": "lessc less/mff/dark-skin.less --clean-css=\"--s1 --advanced --compatibility=ie8\" static/styles/dark-skin.css"
+  },
   "dependencies": {
     "striptags": "^3.1.1",
     "pulling": "^1.1.2"

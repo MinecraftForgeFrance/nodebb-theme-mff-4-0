@@ -7,7 +7,12 @@
 		{ "hook": "filter:config.get", "method": "getThemeConfig" },
 		{ "hook": "static:app.load", "method": "init" },
 		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
-		{ "hook": "filter:topic.build", "method": "addUserToTopic" }
+		{ "hook": "filter:topic.build", "method": "addUserToTopic" },
+		{ "hook": "filter:user.customSettings", "method": "addUserSettings" },
+		{ "hook": "action:user.saveSettings", "method": "saveUserSettings" },
+		{ "hook": "filter:user.getSettings", "method": "getUserSettings" },
+		{ "hook": "filter:user.whitelistFields", "method": "appendUserFields" },
+		{ "hook": "filter:middleware.renderHeader", "method": "renderHeader"}
 	],
 	"scripts": [
 		"lib/persona.js",
@@ -21,7 +26,8 @@
 	},
 	"staticDirs": {
 		"images": "static/images",
-		"fonts": "static/fonts"
+		"fonts": "static/fonts",
+		"styles": "static/styles"
 	},
 	"acpScripts": [
 		"lib/admin.js"
