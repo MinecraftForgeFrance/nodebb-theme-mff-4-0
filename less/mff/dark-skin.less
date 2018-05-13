@@ -1,0 +1,138 @@
+body {
+    background-color: #07111d;
+    background: url(/plugins/nodebb-theme-mff-4-0/images/background-dark.jpg);
+    color: #bebfc1;
+    
+    // links
+    a {
+        color: #557a97;
+        &:hover {
+            color: #3b5569;
+        }
+    }
+
+    // categories titles
+    .categories-title {
+        color: #b5b5b5;
+    }
+
+    .category>ul>li:not(.unread) h2 a {
+        color: #dbdbdb;
+    }
+
+    .well {
+        background-color: #01243c;
+        border: 1px solid #2f5066;
+    }
+
+    // shoutbox
+    .shoutbox {
+        .panel-default {
+            border-color: #2f5066;
+
+            >.panel-heading {
+                color: #bebfc1;
+                background-color: #01243c;
+                border-color: #01243c;
+            }
+
+        }
+        .panel {
+            background-color: #0a2a40;
+            border: 1px solid #07111d;
+        }
+
+        .well {
+            background-color: #07111d;
+        }
+
+        .shoutbox-content-overlay {
+            background-color: #294d67;
+        }
+
+        .shoutbox-content-overlay-message a {
+            color: #eaeaea;
+
+            &:hover {
+                color: #f7f7f7;
+            }
+        }
+
+        .form-control {
+            background-color: #07111d;
+            border: 1px solid #2f5066;
+        }
+    }
+
+    // topic
+    .topic {
+
+        .content {
+            background-color: #1c3247;
+            border-top: 1px solid #2f5066;
+            border-left: 1px solid #2f5066;
+            border-right: 1px solid #2f5066;
+
+            &:before {
+                color: #1c3247;
+                text-shadow: 0 -1px 0 #2f5066;
+            }
+
+            // code bloc
+            .hljs {
+                background: #07111d;
+            }
+
+            // table
+            .table-bordered {
+                border: 1px solid #2f5066;
+            }
+
+            .table-striped>tbody>tr:nth-of-type(odd) {
+                background-color: #20394f;
+            }
+
+            thead {
+                background-color: #0a2a40;
+            }
+        }
+
+        .post-footer {
+            background-color: #1c3247;
+            border-bottom: 1px solid #2f5066;
+            border-left: 1px solid #2f5066;
+            border-right: 1px solid #2f5066;
+        }
+
+        .posts {
+            [component=post] {
+                .isSolved {
+                    .content {
+                        background-color: #1c473f;
+                        border-top: 1px solid #3b8d7e;
+                        border-left: 1px solid #3b8d7e;
+                        border-right: 1px solid #3b8d7e;
+
+                        &:before {
+                            color: #1c473f;
+                            text-shadow: 0 -1px 0 #3b8d7e;
+                        }
+                    }
+                    .post-footer {
+                        background-color: #1c473f;
+                        border-bottom: 1px solid #3b8d7e;
+                        border-left: 1px solid #3b8d7e;
+                        border-right: 1px solid #3b8d7e;
+                    }
+                }
+            }
+        }
+
+        // TBC
+        
+    }
+    
+
+
+}
+
