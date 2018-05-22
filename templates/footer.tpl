@@ -11,11 +11,11 @@
             <a href="/"><img src="/plugins/nodebb-theme-mff-4-0/images/credits.png" alt="Design by Woryk"></a>
           </div>
           <div class="footer-link">
-            <a href="#">Contact</a> / <a href="#">Mentions Légales</a> / <a href="#">Faire un don</a>
+            <a href="/contact">Contact</a> / <a href="/legalnotice">Mentions Légales</a> / <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HWRTDF8RJEB4W" target="_blank">Faire un don</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
-          <div class="pull-right footer-social-networks">
+          <div class="pull-right footer-social-networks no-pull-xs">
               <!--Facebook-->
               <a href="https://www.facebook.com/MinecraftForgeFrance" target="_blank" class="icons-sm"><i class="fa fa-facebook"> </i></a>
               <!--Twitter-->
@@ -32,7 +32,8 @@
       </div>
       <div class="row footer-copyright footer-row">
         <div class="col-xs-12">
-          <p class="footer-link">MINECRAFT FORGE FRANCE © 2018</p>
+          <p class="pull-left footer-link no-pull-xs">MINECRAFT FORGE FRANCE © 2018</p>
+          <p class="pull-right no-pull-xs">Powered by <a href="https://nodebb.org/" target="_blank">NodeBB</a></p>
         </div>
       </div>
     </div>
