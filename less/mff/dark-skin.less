@@ -116,6 +116,7 @@ body {
             [component=post] {
                 .isSolved {
                     .content {
+                        color: #07111d;
                         background-color: #1c473f;
                         border-top: 1px solid #3b8d7e;
                         border-left: 1px solid #3b8d7e;
@@ -199,6 +200,7 @@ body {
     }
 
     .panel-default>.panel-heading {
+        color: #d2d2d2;
         background-color: #07111d;
         border-color: #2f5066;
     }
@@ -378,6 +380,68 @@ body {
     .dropdown-menu>li>form>.btn-link:focus, .dropdown-menu>li>form>.btn-link:hover, .dropdown-menu>li>form>button:focus, .dropdown-menu>li>form>button:hover {
         color: #e0e0e0;
         background-color: #082031;
+    }
+
+    // list
+
+    .list-group-item {
+        color: #bebfc1;
+        background-color: #0a2a40;
+        border: 1px solid #07111d;
+    }
+
+    a.list-group-item:focus, a.list-group-item:hover {
+        color: #e0e0e0;
+        background-color: #082031;
+    }
+
+    // admonition
+
+    .admonition p {
+        padding: 0 1rem;
+        color: #01243c;
+    }
+
+    // panel
+
+    .panel-footer {
+        background-color: #0a2a40;
+        border-top: 1px solid #2f5066;
+    }
+
+    .panel-primary>.panel-heading {
+        color: #fff;
+        background-color: #0a2a40;
+        border-color: #2f5066;
+    }
+
+    .panel>.panel-body+.table, .panel>.panel-body+.table-responsive, .panel>.table+.panel-body, .panel>.table-responsive+.panel-body {
+        border-top: 1px solid #2f5066;
+    }
+
+    // table
+
+    .table-hover>tbody>tr {
+        background-color: #0a2a40;
+    }
+
+    .table-hover>tbody>tr:hover {
+        background-color: #082031;
+    }
+
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        border-top: 1px solid #2f5066;
+    }
+
+    .table>thead>tr>th {
+        border-bottom: 2px solid #2f5066;
+    }
+
+    // textarea
+
+    textarea {
+        background-color: #07111d;
+        border: 1px solid #2f5066;
     }
 
 }
