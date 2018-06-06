@@ -254,6 +254,23 @@ body {
         color: #555;
     }
 
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        color: #fefefe;
+        background-color: #1c3247;
+        border: 1px solid #2f5066;
+        border-bottom-color: transparent;
+        cursor: default;
+    }
+
+    .nav>li>a:focus, .nav>li>a:hover {
+        background-color: #2f5066;
+        color: #e2e2e2;
+    }
+
+    .nav-tabs>li>a:hover {
+        border-color: #3f6e8d;
+    }
+
     // btns
 
     .btn-default {
@@ -293,7 +310,8 @@ body {
     // text header
 
     .text-header {
-        background-color: #2f4a5d;
+        background-color: #0a2a40;
+        border: 1px solid #2f5066;
     }
 
     // tags
@@ -437,12 +455,57 @@ body {
         border-bottom: 2px solid #2f5066;
     }
 
+    .table-striped>tbody>tr:nth-of-type(odd) {
+        background-color: #0a2a40;
+    }
+
+    .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+        border: 1px solid #2f5066;
+    }
+
     // textarea
 
     textarea {
         background-color: #07111d;
+        border: 1px solid #2f5066!important;
+    }
+
+    // re-captcha
+
+    .rc-anchor-light.rc-anchor-normal {
         border: 1px solid #2f5066;
     }
+    .rc-anchor-light {
+        background: #03263e;
+        color: #fdfdfd;
+    }
+    .rc-anchor-logo-text {
+        color: #fff;
+    }
+    .rc-anchor-pt a:link, .rc-anchor-pt a:visited {
+        color: #c2c2c2;
+    }
+
+    // cookies
+
+    .cookie-consent {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    // alert
+
+    .alert-warning {
+        background-color: #07111d;
+        color: #7dbae8!important;
+    }
+
+    // code
+
+    code {
+        color: #ad0001;
+        background-color: #07111d;
+    }
+
 
 }
 
