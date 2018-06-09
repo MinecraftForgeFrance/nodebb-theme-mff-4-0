@@ -133,7 +133,7 @@ library.addUserSettings = function(data, callback) {
 
 	data.customSettings.push({
 		title: 'Paramètre du thème',
-		content: '<div class="form-group"><label for="mffThemeSkin">Style de MFFv4</label><select class="form-control" id="mffThemeSkin" data-property="mffThemeSkin" autocomplete="off">' + options + '</select><input type="hidden" id="bootswatchSkin" value="noskin"></div>'
+		content: '<div class="form-group"><label for="mffThemeSkin">Style de MFFv4</label><select class="form-control" id="mffThemeSkin" data-property="mffThemeSkin" autocomplete="off">' + options + '</select><input type="hidden" id="bootswatchSkin" value="default"></div>'
 		// hidden input is a hack to avoid nodebb to clear the skin
 	});
 
