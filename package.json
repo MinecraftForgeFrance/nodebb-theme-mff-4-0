@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-mff-4-0",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "nbbpm": {
     "compatibility": "^1.10.0"
   },
@@ -51,7 +51,7 @@
     "compiledark": "lessc less/mff/dark-skin.less --clean-css=\"--s1 --advanced --compatibility=ie8\" static/styles/dark-skin.css"
   },
   "dependencies": {
-    "striptags": "^3.1.1",
-    "pulling": "^1.1.2"
+    "pulling": "^2.0.0",
+    "striptags": "^3.1.1"
   }
 }
