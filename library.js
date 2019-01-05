@@ -165,11 +165,14 @@ library.appendUserFields = function(data, callback) {
 	callback(null, data);
 };
 
-library.renderHeader = function(data, callback) {
-	if(data.res.locals.config.uid) {
-		user.getUserField(data.res.locals.config.uid, "mffthemeskin", (err, mffSkin) => {
+library.getLinkTags = function(data, callback) {
+	if(data.req.uid) {
+		user.getUserField(data.req.uid, "mffthemeskin", (err, mffSkin) => {
 			if(!err && mffSkin && mffSkin === "dark") {
-				data.templateValues.bootswatchCSS = '/plugins/nodebb-theme-mff-4-0/styles/dark-skin.css';
+				data.links.push({
+					rel: 'stylesheet',
+					href: '/plugins/nodebb-theme-mff-4-0/styles/dark-skin.css'
+				});
 			}
 			callback(null, data);
 		});
@@ -177,6 +180,6 @@ library.renderHeader = function(data, callback) {
 	else {
 		callback(null, data);
 	}
-};
+}
 
 module.exports = library;

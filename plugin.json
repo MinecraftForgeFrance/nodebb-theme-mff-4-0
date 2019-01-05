@@ -12,7 +12,7 @@
 		{ "hook": "action:user.saveSettings", "method": "saveUserSettings" },
 		{ "hook": "filter:user.getSettings", "method": "getUserSettings" },
 		{ "hook": "filter:user.whitelistFields", "method": "appendUserFields" },
-		{ "hook": "filter:middleware.renderHeader", "method": "renderHeader"}
+		{ "hook": "filter:meta.getLinkTags", "method": "getLinkTags" }
 	],
 	"scripts": [
 		"lib/persona.js",
