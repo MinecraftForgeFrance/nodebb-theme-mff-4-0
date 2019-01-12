@@ -113,26 +113,23 @@ body {
         }
 
         .posts {
-            [component=post] {
-                .isSolved {
-                    .content {
-                        color: #07111d;
-                        background-color: #1c473f;
-                        border-top: 1px solid #3b8d7e;
-                        border-left: 1px solid #3b8d7e;
-                        border-right: 1px solid #3b8d7e;
+            [component="post"].isSolved {
+                .content {
+                    background-color: #1c473f;
+                    border-top: 1px solid #3b8d7e;
+                    border-left: 1px solid #3b8d7e;
+                    border-right: 1px solid #3b8d7e;
 
-                        &:before {
-                            color: #1c473f;
-                            text-shadow: 0 -1px 0 #3b8d7e;
-                        }
+                    &:before {
+                        color: #1c473f;
+                        text-shadow: 0 -1px 0 #3b8d7e;
                     }
-                    .post-footer {
-                        background-color: #1c473f;
-                        border-bottom: 1px solid #3b8d7e;
-                        border-left: 1px solid #3b8d7e;
-                        border-right: 1px solid #3b8d7e;
-                    }
+                }
+                .post-footer {
+                    background-color: #1c473f;
+                    border-bottom: 1px solid #3b8d7e;
+                    border-left: 1px solid #3b8d7e;
+                    border-right: 1px solid #3b8d7e;
                 }
             }
         }
